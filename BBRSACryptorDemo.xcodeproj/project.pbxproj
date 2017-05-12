@@ -89,16 +89,9 @@
 		E888E75F1EC5508400A202B5 /* BBRSACryptorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E888E7841EC5836100A202B5 /* Class */,
 				E888E77F1EC562FE00A202B5 /* Pem */,
 				E888E77B1EC55E7A00A202B5 /* NSString+BBRSACryptor */,
-				E888E7631EC5508400A202B5 /* AppDelegate.h */,
-				E888E7641EC5508400A202B5 /* AppDelegate.m */,
-				E888E7661EC5508400A202B5 /* ViewController.h */,
-				E888E7671EC5508400A202B5 /* ViewController.m */,
-				E888E7691EC5508400A202B5 /* Main.storyboard */,
-				E888E76C1EC5508400A202B5 /* Assets.xcassets */,
-				E888E76E1EC5508400A202B5 /* LaunchScreen.storyboard */,
-				E888E7711EC5508400A202B5 /* Info.plist */,
 				E888E7601EC5508400A202B5 /* Supporting Files */,
 			);
 			path = BBRSACryptorDemo;
@@ -107,6 +100,10 @@
 		E888E7601EC5508400A202B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E888E76C1EC5508400A202B5 /* Assets.xcassets */,
+				E888E76E1EC5508400A202B5 /* LaunchScreen.storyboard */,
+				E888E7711EC5508400A202B5 /* Info.plist */,
+				E888E7691EC5508400A202B5 /* Main.storyboard */,
 				E888E7611EC5508400A202B5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -128,6 +125,17 @@
 				E888E7811EC562FE00A202B5 /* bb.publicKey.pem */,
 			);
 			path = Pem;
+			sourceTree = "<group>";
+		};
+		E888E7841EC5836100A202B5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E888E7631EC5508400A202B5 /* AppDelegate.h */,
+				E888E7641EC5508400A202B5 /* AppDelegate.m */,
+				E888E7661EC5508400A202B5 /* ViewController.h */,
+				E888E7671EC5508400A202B5 /* ViewController.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
