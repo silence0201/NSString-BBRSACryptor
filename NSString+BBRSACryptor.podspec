@@ -15,8 +15,6 @@ Pod::Spec.new do |s|
   s.source_files  = "NSString+BBRSACryptor", "NSString+BBRSACryptor/**/*.{h,m}"
   s.exclude_files = "NSString+BBRSACryptor/Exclude"
   s.requires_arc = true
-  s.dependency "GTMBase64", "~> 1.0"
-  s.dependency "BBRSACryptor", "~> 0.0.5"
   s.dependency 'OpenSSL'
 
 end
