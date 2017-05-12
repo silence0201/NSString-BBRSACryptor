@@ -7,8 +7,8 @@
 //
 
 #import "NSString+BBRSACryptor.h"
-#import <BBRSACryptor/BBRSACryptor.h>
-#import <GTMBase64/GTMBase64.h>
+#import "BBRSACryptor.h"
+#import "GTMBase64.h"
 
 @implementation NSString (BBRSACryptor)
 

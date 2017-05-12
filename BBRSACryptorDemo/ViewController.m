@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "NSString+BBRSACryptor.h"
-#import <BBRSACryptor/BBRSACryptor.h>
 
 //公钥 (请替换)
 #define RSAPublicKey @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2jwfgvEvKbEfzMOatwlagzISSYTcxl/PQHAtjs5qHMUadVwconH7sPuRHuN4FtpXFsxTMFdedW5r9wV0pHZ21HG4fqEctDxGe8epwxe/XP8hZ0nrYjOTD85bNcdC9YLqsM0ueiZsKC/zOZ2N1yZYYVu1CGVsJwCiAvGfGI1QQGwIDAQAB"
@@ -18,8 +17,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic,strong) BBRSACryptor *rsaCryptor ;
-
 @end
 
 @implementation ViewController
@@ -27,9 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.rsaCryptor = [[BBRSACryptor alloc]init] ;
-    [self.rsaCryptor importRSAPublicKeyBase64:RSAPublicKey] ;
-    [self.rsaCryptor importRSAPrivateKeyBase64:RSAPrivateKey] ;
     
     
     // 创建密钥

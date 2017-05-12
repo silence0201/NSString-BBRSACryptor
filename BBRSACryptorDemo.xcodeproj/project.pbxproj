@@ -17,6 +17,8 @@
 		E888E77E1EC55E8D00A202B5 /* NSString+BBRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E888E77D1EC55E8D00A202B5 /* NSString+BBRSACryptor.m */; };
 		E888E7821EC562FE00A202B5 /* bb.privateKey.pem in Resources */ = {isa = PBXBuildFile; fileRef = E888E7801EC562FE00A202B5 /* bb.privateKey.pem */; };
 		E888E7831EC562FE00A202B5 /* bb.publicKey.pem in Resources */ = {isa = PBXBuildFile; fileRef = E888E7811EC562FE00A202B5 /* bb.publicKey.pem */; };
+		E888E7891EC58BA600A202B5 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E888E7871EC58BA600A202B5 /* GTMBase64.m */; };
+		E888E78D1EC58BB900A202B5 /* BBRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E888E78C1EC58BB900A202B5 /* BBRSACryptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,11 @@
 		E888E77D1EC55E8D00A202B5 /* NSString+BBRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BBRSACryptor.m"; sourceTree = "<group>"; };
 		E888E7801EC562FE00A202B5 /* bb.privateKey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bb.privateKey.pem; sourceTree = "<group>"; };
 		E888E7811EC562FE00A202B5 /* bb.publicKey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bb.publicKey.pem; sourceTree = "<group>"; };
+		E888E7861EC58BA600A202B5 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E888E7871EC58BA600A202B5 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E888E7881EC58BA600A202B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E888E78B1EC58BB900A202B5 /* BBRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRSACryptor.h; sourceTree = "<group>"; };
+		E888E78C1EC58BB900A202B5 /* BBRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRSACryptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,8 @@
 		E888E77B1EC55E7A00A202B5 /* NSString+BBRSACryptor */ = {
 			isa = PBXGroup;
 			children = (
+				E888E78A1EC58BB900A202B5 /* BBRSACryptor */,
+				E888E7851EC58BA600A202B5 /* GTMBase64 */,
 				E888E77C1EC55E8D00A202B5 /* NSString+BBRSACryptor.h */,
 				E888E77D1EC55E8D00A202B5 /* NSString+BBRSACryptor.m */,
 			);
@@ -136,6 +145,25 @@
 				E888E7671EC5508400A202B5 /* ViewController.m */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		E888E7851EC58BA600A202B5 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				E888E7861EC58BA600A202B5 /* GTMBase64.h */,
+				E888E7871EC58BA600A202B5 /* GTMBase64.m */,
+				E888E7881EC58BA600A202B5 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		E888E78A1EC58BB900A202B5 /* BBRSACryptor */ = {
+			isa = PBXGroup;
+			children = (
+				E888E78B1EC58BB900A202B5 /* BBRSACryptor.h */,
+				E888E78C1EC58BB900A202B5 /* BBRSACryptor.m */,
+			);
+			path = BBRSACryptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E888E78D1EC58BB900A202B5 /* BBRSACryptor.m in Sources */,
 				E888E7681EC5508400A202B5 /* ViewController.m in Sources */,
 				E888E7651EC5508400A202B5 /* AppDelegate.m in Sources */,
+				E888E7891EC58BA600A202B5 /* GTMBase64.m in Sources */,
 				E888E77E1EC55E8D00A202B5 /* NSString+BBRSACryptor.m in Sources */,
 				E888E7621EC5508400A202B5 /* main.m in Sources */,
 			);

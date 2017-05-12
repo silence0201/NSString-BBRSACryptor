@@ -2,8 +2,5 @@
 # platform :ios, '9.0'
 
 target 'BBRSACryptorDemo' do
-
-	pod 'BBRSACryptor'
-    pod 'GTMBase64', '~> 1.0.0'
-
+	pod 'OpenSSL'
 end
