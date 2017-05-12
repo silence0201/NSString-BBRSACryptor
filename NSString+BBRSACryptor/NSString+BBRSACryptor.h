@@ -45,7 +45,12 @@
 
 /// RSA验证签名
 + (BOOL)verifyString:(NSString *)string sign:(NSString *)signString publicKey:(NSString *)publicKey;
+/// RSA验证签名
+- (BOOL)verifySign:(NSString *)signString publicKey:(NSString *)publicKey ;
+
 /// RSA MD5 验证签名
 + (BOOL)verifyMD5String:(NSString *)string sign:(NSString *)signString publicKey:(NSString *)publicKey;
+/// RSA MD5 验证签名
+- (BOOL)verifyMD5Sign:(NSString *)signString publicKey:(NSString *)publicKey ;
 
 @end

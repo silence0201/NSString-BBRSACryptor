@@ -132,5 +132,13 @@
     return NO;
 }
 
+- (BOOL)verifySign:(NSString *)signString publicKey:(NSString *)publicKey {
+    return [NSString verifyString:self sign:signString publicKey:publicKey] ;
+}
+
+- (BOOL)verifyMD5Sign:(NSString *)signString publicKey:(NSString *)publicKey {
+    return [NSString verifyMD5String:self sign:signString publicKey:publicKey] ;
+}
+
 
 @end
