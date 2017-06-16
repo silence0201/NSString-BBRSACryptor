@@ -10,7 +10,7 @@
 #import "BBRSACryptor.h"
 #import "GTMBase64.h"
 
-@implementation NSString (BBRSACryptor)
+@implementation NSString (GenerateKey)
 
 + (void)generatePublicAndPrivateKey {
     BBRSACryptor *reaCryptor = [[BBRSACryptor alloc]init] ;
@@ -29,6 +29,10 @@
 + (NSString *)RSAPublicKeyFilePath {
     return [[self RSAKeyDir] stringByAppendingPathComponent:@"bb.privateKey.pem"] ;
 }
+
+@end
+
+@implementation NSString (RSAKeyString)
 
 + (NSString *)encryptString:(NSString *)string publicKey:(NSString *)publicKey
 {

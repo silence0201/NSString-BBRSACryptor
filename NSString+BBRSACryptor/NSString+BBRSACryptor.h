@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (BBRSACryptor)
+@interface NSString (GenerateKey)
 
 /// 生成公钥和私钥
 + (void)generatePublicAndPrivateKey ;
@@ -18,6 +18,10 @@
 + (NSString *)RSAPublicKeyFilePath ;
 /// 私钥的路径
 + (NSString *)RSAPrivateKeyFilePath ;
+
+@end
+
+@interface NSString (RSAKeyString)
 
 /// 公钥加密
 + (NSString *)encryptString:(NSString *)string publicKey:(NSString *)publicKey;

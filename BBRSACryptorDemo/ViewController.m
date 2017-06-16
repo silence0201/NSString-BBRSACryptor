@@ -24,8 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
     // 创建密钥
     [NSString generatePublicAndPrivateKey] ;
     
