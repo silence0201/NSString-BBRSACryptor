@@ -21,6 +21,52 @@
 
 @end
 
+@interface NSString (RSAKeyPEMData)
+
+/// 公钥加密
++ (NSString *)encryptString:(NSString *)string publicKeyPEMData:(NSData *)publicKey;
+/// 公钥加密
+- (NSString *)encryptWithPublicKeyPEMData:(NSData *)publicKey ;
+
+/// 公钥解密
++ (NSString *)decodeString:(NSString *)string publicKeyPEMData:(NSData *)publicKey ;
+/// 公钥解密
+- (NSString *)decodeWithPublicKeyPEMData:(NSData *)publicKey ;
+
+/// 私钥加密
++ (NSString *)encryptString:(NSString *)string privateKeyPEMData:(NSData *)privateKey ;
+/// 私钥加密
+- (NSString *)encryptWithPrivateKeyPEMData:(NSData *)privateKey ;
+
+/// 私钥解密
++ (NSString *)decodingString:(NSString *)string privateKeyPEMData:(NSData *)privateKey;
+/// 私钥解密
+- (NSString *)decodeWithPrivateKeyPEMData:(NSData *)privateKey ;
+
+/// 私钥签名
++ (NSString *)singString:(NSString *)string privateKeyPEMData:(NSData *)privateKey;
+/// 私钥签名
+- (NSString *)singWithPrivateKeyPEMData:(NSData *)privateKey ;
+
+/// 私钥签名MD5
++ (NSString *)singMD5String:(NSString *)string privateKeyPEMData:(NSData *)privateKey;
+/// 私钥签名MD5
+- (NSString *)singMD5WithPrivateKeyPEMData:(NSData *)privateKey ;
+
+/// RSA验证签名
++ (BOOL)verifyString:(NSString *)string sign:(NSString *)signString publicKeyPEMData:(NSData *)publicKey;
+/// RSA验证签名
+- (BOOL)verifySign:(NSString *)signString publicKeyPEMData:(NSData *)publicKey ;
+
+/// RSA MD5 验证签名
++ (BOOL)verifyMD5String:(NSString *)string sign:(NSString *)signString publicKeyPEMData:(NSData *)publicKey;
+/// RSA MD5 验证签名
+- (BOOL)verifyMD5Sign:(NSString *)signString publicKeyPEMData:(NSData *)publicKey ;
+
+
+@end
+
+
 @interface NSString (RSAKeyString)
 
 /// 公钥加密
