@@ -17,6 +17,19 @@
     [reaCryptor generateRSAKeyPairWithKeySize:1024] ;
 }
 
++ (NSString *)RSAKeyDir {
+    NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] ;
+    return [documentDir stringByAppendingPathComponent:@".openssl_rsa"] ;
+}
+
++ (NSString *)RSAPrivateKeyFilePath {
+    return [[self RSAKeyDir] stringByAppendingPathComponent:@"bb.publicKey.pem"] ;
+}
+
++ (NSString *)RSAPublicKeyFilePath {
+    return [[self RSAKeyDir] stringByAppendingPathComponent:@"bb.privateKey.pem"] ;
+}
+
 + (NSString *)encryptString:(NSString *)string publicKey:(NSString *)publicKey
 {
     BBRSACryptor *rsaCryptor = [[BBRSACryptor alloc] init];
