@@ -12,6 +12,8 @@
 
 /// 生成公钥和私钥
 + (void)generatePublicAndPrivateKey ;
+/// RSAKey的目录
++ (NSString *)RSAKeyDir ;
 /// 公钥的路径
 + (NSString *)RSAPublicKeyFilePath ;
 /// 私钥的路径
